@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 int arr[100] ;
 int insert()
 {
@@ -20,7 +19,7 @@ int display(){
     printf("\n\n[\t");
     for(int i=0 ; i<n ; i++)
     {
-        printf("%d\t",arr[i]);
+      printf("%d\t",arr[i]);
     }
 }
 int delete(){
