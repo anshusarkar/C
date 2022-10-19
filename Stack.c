@@ -1,5 +1,5 @@
-#include<stdio.h>
-int arr[100] ;
+#include <stdio.h>
+int a[100];
 int insert()
 {
     int n;
@@ -8,44 +8,41 @@ int insert()
     for(int i=0 ; i<n ; i++)
     {
         printf("Enter an element: ");
-        scanf("%d",&arr[i]);
+        scanf("%d",&a[i]);
     }
         
 }
-int display(){
+int display()
+{
     int n;
-    printf("Enter the number of element to display: ");
-    scanf("%d",&n);
-    printf("\n\n[\t");
-    for(int i=0 ; i<n ; i++)
+    printf("Enter the number of element to be displayed : ");
+    scanf("%d", &n);
+    printf("Following the order lifo :[\t ");
+    for (int i = 0; i < n; i++)
     {
-      printf("%d\t",arr[i]);
+        printf("%d", a[i]);
+        printf("]");
     }
 }
-int delete(){
-    int i ;
-    int j ;
-    printf("Enter the initial index of the elemnet to delete\n(Index starts from Zero): ");
-    scanf("%d",&i);
-    printf("Enter the the last posiotion of Element to delete more than one \n\nEnter the initail index again to delete one  : ");
-    scanf("%d",&j);
-    if(arr[0]!=0)
+int delete ()
+{
+    printf("Enter the initaial index of the array (Index starts from Zero) : ");
+    int i;
+    scanf("%d", &i);
+    printf("Enter the final index of the array or enter the intaial index agin to delete : ");
+    int j;
+    scanf("%d", &j);
+    if (i == j)
     {
-    if((i==j)&&(i=j=0))
-        {
-            arr[i]=0;        
-        }
-    else
-        {
-        for(int x = i ; x < j ; x++)
-            {
-            arr[x] = 0;
-            }
-        }
+        printf("deleteing the value at index %d\n", i);
+        a[i] = 0;
     }
     else
     {
-        printf("Nothing is inserted ....\nNothing to delete\n");
+        for (int x = i; x < j; j++)
+        {
+            a[x] = 0;
+        }
     }
 }
 
@@ -70,7 +67,7 @@ void main()
       }
     else if (choice==2)
       {
-        if (arr[0]==0)
+        if (a[0]==0)
           {
             printf("Array is empty!\n");
             printf("Array is in uendeflow");
@@ -92,6 +89,5 @@ void main()
      printf("\n\nExiting.....\n\n");
     
   }
-
 
 }
