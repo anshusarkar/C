@@ -20,7 +20,7 @@ void insert(struct node *ptr)
 {
     while (ptr != NULL)
     {
-        printf("Enter data  : ", &ptr->data);
+        printf("Enter data  : ");
         scanf("%d", &ptr->data);
         ptr = ptr->next;
     }
