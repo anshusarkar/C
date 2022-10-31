@@ -1,48 +1,52 @@
-#include <stdio.h>
-int a[100];
+#include<stdio.h>
+#define n 5 
+int arr[n] ;
 int insert()
 {
-    int n;
-    printf("Enter the number of elements to be inserted: ");
-    scanf("%d",&n);
     for(int i=0 ; i<n ; i++)
     {
         printf("Enter an element: ");
-        scanf("%d",&a[i]);
+        scanf("%d",&arr[i]);
     }
+    return n ;
         
 }
-int display()
-{
-    int n;
-    printf("Enter the number of element to be displayed : ");
-    scanf("%d", &n);
-    printf("Following the order lifo :[\t ");
-    for (int i = 0; i < n; i++)
+int display(){
+  
+    printf("\n\n[\t");
+    for(int i=n-1 ; i>=0 ; i--)
     {
-        printf("%d", a[i]);
-        printf("]");
+      printf("%d\t",arr[i]);
     }
 }
-int delete ()
-{
-    printf("Enter the initaial index of the array (Index starts from Zero) : ");
-    int i;
-    scanf("%d", &i);
-    printf("Enter the final index of the array or enter the intaial index agin to delete : ");
-    int j;
-    scanf("%d", &j);
-    if (i == j)
+int delete(){
+    int i ;
+    int j ;
+    printf("Enter the initial index of the elemnet to delete\n(Index starts from Zero): ");
+    scanf("%d",&i);
+    printf("Enter the the last posiotion of Element to delete more than one \n\nEnter the initail index again to delete one  : ");
+    scanf("%d",&j);
+    if(arr[0]!=0)
     {
-        printf("deleteing the value at index %d\n", i);
-        a[i] = 0;
+    if((i=0)&&(j=0))
+        {
+            arr[0]=0;        
+        }
+    else if (i=j)
+    {
+      arr[i]=0;
+    }
+    else 
+        {
+        for(int x = i ; x <= j ; x++)
+            {
+            arr[x] = 0;
+            }
+        }
     }
     else
     {
-        for (int x = i; x < j; j++)
-        {
-            a[x] = 0;
-        }
+        printf("Nothing is inserted ....\nNothing to delete\n");
     }
 }
 
@@ -67,7 +71,7 @@ void main()
       }
     else if (choice==2)
       {
-        if (a[0]==0)
+        if (arr[n]=0)
           {
             printf("Array is empty!\n");
             printf("Array is in uendeflow");
@@ -89,5 +93,6 @@ void main()
      printf("\n\nExiting.....\n\n");
     
   }
+
 
 }

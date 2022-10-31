@@ -1,21 +1,18 @@
 #include<stdio.h>
-int arr[100] ;
+#define n 5 
+int arr[n] ;
 int insert()
 {
-    int n;
-    printf("Enter the number of elements to be inserted: ");
-    scanf("%d",&n);
     for(int i=0 ; i<n ; i++)
     {
         printf("Enter an element: ");
         scanf("%d",&arr[i]);
     }
+    return n ;
         
 }
 int display(){
-    int n;
-    printf("Enter the number of element to display: ");
-    scanf("%d",&n);
+  
     printf("\n\n[\t");
     for(int i=0 ; i<n ; i++)
     {
@@ -31,13 +28,17 @@ int delete(){
     scanf("%d",&j);
     if(arr[0]!=0)
     {
-    if((i==j)&&(i=j=0))
+    if((i=0)&&(j=0))
         {
-            arr[i]=0;        
+            arr[0]=0;        
         }
-    else
+    else if (i=j)
+    {
+      arr[i]=0;
+    }
+    else 
         {
-        for(int x = i ; x < j ; x++)
+        for(int x = i ; x <= j ; x++)
             {
             arr[x] = 0;
             }
@@ -70,7 +71,7 @@ void main()
       }
     else if (choice==2)
       {
-        if (arr[0]==0)
+        if (arr[n]=0)
           {
             printf("Array is empty!\n");
             printf("Array is in uendeflow");
