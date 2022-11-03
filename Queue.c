@@ -71,7 +71,7 @@ void main()
       }
     else if (choice==2)
       {
-        if (arr[n]=0)
+        if (arr[n]==0)
           {
             printf("Array is empty!\n");
             printf("Array is in uendeflow");
