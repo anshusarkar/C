@@ -1,6 +1,7 @@
 #include<stdio.h>
 #define n 5 
 int arr[n] ;
+int i ;
 int insert()
 {
     for(int i=0 ; i<n ; i++)
@@ -8,7 +9,6 @@ int insert()
         printf("Enter an element: ");
         scanf("%d",&arr[i]);
     }
-    return n ;
         
 }
 int display(){
@@ -71,10 +71,10 @@ void main()
       }
     else if (choice==2)
       {
-        if (arr[n]==0)
+        if ( i > n)
           {
-            printf("Array is empty!\n");
-            printf("Array is in uendeflow");
+            printf("Array is full!\n");
+            printf("Array is in overflow");
           }
         else
             {

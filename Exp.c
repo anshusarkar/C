@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 #define MAX 50
 
 void insert();
@@ -11,146 +10,137 @@ void display();
 
 int queue[MAX];
 
-int rear = - 1;
+int rear = -1;
 
-int front = - 1;
+int front = -1;
 
-main()
-
-{
-
-int choice;
-
-while (1)
+int main()
 
 {
 
-printf("1.Insert element to queue \n");
+    int choice;
 
-printf("2.Delete element from queue \n");
+    while (1)
 
-printf("3.Display all elements of queue \n");
+    {
 
-printf("4.Quit \n");
+        printf("1.Insert element to queue \n");
 
-printf("Enter your choice : ");
+        printf("2.Delete element from queue \n");
 
-scanf("%d", &choice);
+        printf("3.Display all elements of queue \n");
 
-switch (choice)
+        printf("4.Quit \n");
 
-{
+        printf("Enter your choice : ");
 
-case 1:
+        scanf("%d", &choice);
 
-insert();
+        switch (choice)
 
-break;
+        {
 
-case 2:
+        case 1:
 
-dele();
+            insert();
 
-break;
+            break;
 
-case 3:
+        case 2:
 
-display();
+            dele();
 
-break;
+            break;
 
-case 4:
+        case 3:
 
-printf("exit");
+            display();
 
-default:
+            break;
 
-printf("Wrong choice \n");
+        case 4:
 
-}
+            printf("exit");
 
-}
+        default:
+
+            printf("Wrong choice \n");
+        }
+    }
 }
 
 void insert()
 
 {
 
-int item;
+    int item;
 
-if (rear == MAX - 1)
+    if (rear == MAX - 1)
 
-printf("Queue Overflow \n");
+        printf("Queue Overflow \n");
 
-else
+    else
 
-{
+    {
 
-if (front == - 1 && rear==-1)
+        if (front == -1 && rear == -1)
 
-front = 0;
+            front = 0;
 
-printf("Inset the element in queue : ");
+        printf("Inset the element in queue : ");
 
-scanf("%d", &item);
+        scanf("%d", &item);
 
-rear = rear + 1;
+        rear = rear + 1;
 
-queue[rear] = item;
-
-}
-
+        queue[rear] = item;
+    }
 }
 
 void dele()
 
 {
 
-if (front == - 1 || front > rear)
+    if (front == -1 || front > rear)
 
-{
+    {
 
-printf("Queue Underflow \n");
+        printf("Queue Underflow \n");
 
-return ;
+        return;
+    }
 
-}
+    else
 
-else
+    {
 
-{
+        printf("Element deleted from queue is : %d\n",
+               queue[front]);
 
-printf("Element deleted from queue is : %d\n",
-queue[front]);
-
-front = front + 1;
-
-}
-
+        front = front + 1;
+    }
 }
 
 void display()
 
 {
 
-int i;
+    int i;
 
-if (front == - 1)
+    if (front == -1)
 
-printf("Queue is empty \n");
+        printf("Queue is empty \n");
 
-else
+    else
 
-{
+    {
 
-printf("Queue is : \n");
+        printf("Queue is : \n");
 
-for (i = front; i <= rear; i++)
+        for (i = front; i <= rear; i++)
 
-printf("%d ", queue[i]);
+            printf("%d ", queue[i]);
 
-printf("\n");
-
-}
-
+        printf("\n");
+    }
 }
