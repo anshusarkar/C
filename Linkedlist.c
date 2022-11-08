@@ -8,7 +8,7 @@ struct node
     struct node *next;
 };
 
-void display(struct node *ptr)
+void display(n1 *ptr)
 {
     while (ptr != NULL)
     {
