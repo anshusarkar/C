@@ -3,7 +3,7 @@
 struct node 
 {
     int data ;
-    int*next ;
+    struct node *next ;
 } ;
 void insert(struct node *ptr)
 {
