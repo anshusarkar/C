@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n ; int temp ;
+    int n ; int temp  ;
     printf("Enter the length : ");
     scanf("%d",&n);
     int a[100] ;
