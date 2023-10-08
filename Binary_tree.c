@@ -8,19 +8,27 @@ struct node {
 
 void insert(struct node *ptr)
 {
-   while (ptr !=NULL)
-   {
-    printf("Enter data : ");
+    printf("\nEnter data in the left : ");
+    scanf("%d",&ptr->le);
+  
+    printf("\nEnter data : ");
     scanf("%d",&ptr->data);
-   }
+
+    printf("\nEnter data in the right : ");
+    scanf("%d",&ptr->ri);
+   
 }
 
 void display (struct node *ptr)
 {
-    while (ptr!=NULL)
-    {
-        printf("Entered data is :%d\n ", ptr->data);
-    }
+
+    printf("\n----------------------------------------------------------------\n----------------------------------------------------------------\nEntered datas are:\n");
+        
+        printf("\nEntered data in the left is :%d\n ", ptr->le);
+        printf("\nEntered data is :%d\n ", ptr->data);
+        printf("\nEntered data in the right is :%d\n ", ptr->ri);
+        
+    
 }
 
 int main ()
@@ -42,8 +50,11 @@ int main ()
     head -> data ;
     head -> le = first;
     head -> ri = last ;
-
-    insert();    
+    
+    insert(head);  
+    display(head);  
+ 
+ 
     
 
     
