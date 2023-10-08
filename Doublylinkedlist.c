@@ -43,7 +43,7 @@ int main ()
     head -> le = first;
     head -> ri = last ;
 
-    
+    insert();    
     
 
     

@@ -56,7 +56,7 @@ int main() {
     bubble_sort(arr , count);
     val2 = clock();
 
-    printf("\nThe average case time complexity for the sorting is : %d ms \n" , val2 - val1);
+    printf("\n The average case time complexity for the sorting is : %d ms \n" , val2 - val1);
 
     for(int i = count ; i>0 ; i--){
         arr[i] = i ;
