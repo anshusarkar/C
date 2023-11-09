@@ -3,7 +3,7 @@
 #define MAX 50
 
 void insert();
- 
+  
 void dele();
 
 void display();
