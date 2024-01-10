@@ -12,7 +12,7 @@ int main() {
         for (int j = 2; j <= num / 2; ++j) {
             if (num % j == 0) {
                 flag = 1;
-                break;  // exit the loop if a factor is found
+                break;  
             }
         }
 
