@@ -1,0 +1,1 @@
+C is the programming language developed by Dennis Ritchie in 1972 AT&T bell labs that is statically typed, compiled, procedural, and a high-level programming language. It served has an influential foundation for subsequent languages and was syntactically inspired from BCPL and B languages.
