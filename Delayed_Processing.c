@@ -37,7 +37,7 @@ int main(){
 	float var2 = clock();	
 	printf("\n\nThe execution time for the function was : %.3f sec - 15 secs os slowness.... \n\n  " , (var2 - var)/1000);
 
-	//If done in windows processing time differs and "wating .." animation works as desired but why the dirrence even if the used compiler is same ?
+	//If done in windows processing time differs and "wating .." animation works as desired but why the dirrence in execution even if the used compiler is same .
 	
 	return 0;
 }
