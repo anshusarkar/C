@@ -1,1 +1,27 @@
-C is the programming language developed by Dennis Ritchie in 1972 AT&T bell labs that is statically typed, compiled, procedural, and a high-level programming language. It served has an influential foundation for subsequent languages and was syntactically inspired from BCPL and B languages.
+C is the programming language developed by Dennis Ritchie in 1972 AT&T bell labs that is statically typed, compiled, procedural, and a high-level programming language. 
+It served has an influential foundation for subsequent languages and was syntactically inspired from B languages.
+
+Terms and their meanings used :
+
+                1) Compiled : A prog lang is "Compiled" when it
+                   get's translated into the system understandable byte code 
+                   
+                   "Almost every language is "Compiled" though not every language
+                   is "Interpreted" like C,C++"
+
+                2) Statically typed : A prog lang is "Statically typed" when the language 
+                   is needed to be made aware with data types the language is get's called
+                   a Statically typed language.
+
+                3) Procedural : A prog lang is "Procedural" when the lang supports it's paradigm 
+                   which is based on the concept of procedures or routines, which are sets of 
+                   instructions that tell a computer what to do step by step i.e. Functions .
+                   In procedural programming procedures are UDF (User defined functions)
+                
+                4) Pointers and Memory Management : In c and C++ their is a concept of pointers
+                   which is a varriable that stores the memory address of other varriables
+
+                   In C , C++ and C# every Memory can be allocated and reallocated though C# has garbage collection like java.
+                   (Maybe C # has all featurs of C family in one lang  ?)
+
+                   
