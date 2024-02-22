@@ -2,11 +2,11 @@
 int main()
 {
     int a[100], i, j, n, temp;
-    printf("Enter the number of elements here _ ");
+    printf("Enter the number of elements here : ");
     scanf("%d", &n);
     for (i = 0; i < n; i++)
     {
-        printf("Enter the number here _ ");
+        printf("Enter the number here : ");
         scanf("%d", &a[i]);
     }
 
