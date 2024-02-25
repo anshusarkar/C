@@ -14,7 +14,6 @@ int bubble_sort(int count, int arr[]){
         }
     }
 
-    return bubble_sort ;
 }
 
 void main()
@@ -45,7 +44,7 @@ void main()
     bubble_sort(size , b_arr);
     b_var2 = clock();
 
-    printf("\nThe best case time complexity for the given array to sort ucing bubble sort is : %d ms\n" , b_var2 - b_var1);
+    printf("\nThe best case time complexity for the given array to sort using bubble sort is : %d ms\n" , b_var2 - b_var1);
 
     // Calculating the average_case i.e. array has randome values in it
 
@@ -57,7 +56,7 @@ void main()
     bubble_sort(size , a_arr);
     a_var2 = clock();
 
-    printf("\nThe average average time complexity for the given array to sort ucing bubble sort is : %d ms\n" , a_var2 - a_var1);
+    printf("\nThe average average time complexity for the given array to sort using bubble sort is : %d ms\n" , a_var2 - a_var1);
 
 
     // Calculating the wrost_case i.e. array to be sorted is in the opposite order of the sorting
@@ -69,7 +68,7 @@ void main()
     bubble_sort(size , w_arr);
     w_var2 = clock();
 
-    printf("\nThe wrost case time complexity for the given array to sort ucing bubble sort is : %d ms\n" , w_var2 - w_var1);
+    printf("\nThe wrost case time complexity for the given array to sort using bubble sort is : %d ms\n" , w_var2 - w_var1);
 
 
 
