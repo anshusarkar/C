@@ -1,4 +1,5 @@
 /*serching the minimum element in the array using dym*/
+// This the principle on which selection sort is based on 
 #include<stdio.h>
 #include<stdlib.h>
 int main()
@@ -48,7 +49,7 @@ int main()
         
     }
    
-   printf("\n\nThe minumam element in the array is : %d" , min  );
+   printf("\n\nThe minumam element in the array is : %d\n" , min  );
 
    free(ptr);
    return 0 ;
