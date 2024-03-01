@@ -7,7 +7,7 @@ Terms and their meanings used :
                    get's translated into the system understandable byte code 
                    
                    "Almost every language is "Compiled" though not every language
-                   is "Interpreted" like C,C++"
+                   is "Interpreted" like C,C++,go and rust"
 
                 2) Statically typed : A prog lang is "Statically typed" when the language 
                    is needed to be made aware with data types the language is get's called
