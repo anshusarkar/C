@@ -21,7 +21,7 @@ int main()
         }
         a[j + 1] = temp;
     }
-    printf("[\t");
+    printf("[\t");  
     for (i = 0; i < n; i++)
     {
         printf("%d\t", a[i]);
