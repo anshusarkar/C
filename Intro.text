@@ -1,6 +1,6 @@
 C is the programming language developed by Dennis Ritchie in 1972 AT&T bell labs that is statically typed, compiled, procedural, and a high-level programming language. 
 It served has an influential foundation for subsequent languages and was syntactically inspired from B languages.
-
+ fact : to generate assembly code from c lang using gcc use command gcc -S filename.c
 Terms and their meanings used :
 
                 1) Compiled : A prog lang is "Compiled" when it
