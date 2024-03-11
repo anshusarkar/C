@@ -17,7 +17,7 @@ int main()
       exit(1);             
    }
 
-   printf("Enter num: \n");
+   printf("Enter num (The number woouldget stored in the hello.txt file ): ");
    scanf("%d",&num);
 
    fprintf(fptr,"%d",num);
