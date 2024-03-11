@@ -16,7 +16,7 @@ int main()
 
    fscanf(fptr,"%d", &num);
 
-   printf("Value of n=%d", num);
+   printf("Value of n (that was storedin 'Hello.txt') is  = %d\n", num);
    fclose(fptr); 
   
    return 0;
