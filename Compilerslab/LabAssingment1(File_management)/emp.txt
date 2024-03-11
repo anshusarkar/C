@@ -1,0 +1,3 @@
+Name  = Anshu
+Age  = -1789861144
+Salary  = 0.00
