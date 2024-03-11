@@ -1,0 +1,1 @@
+/*LEX to count the no of "scanf" and "printf" statement in a c program. Replace them with "writf" and "readf" respectively.*/
