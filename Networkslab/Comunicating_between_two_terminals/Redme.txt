@@ -1,0 +1,7 @@
+In this program to programs are to communicate between each other 
+from diffrent terminals for that there should be two diffrent tereminals 
+and both should have their spperate executables 
+
+to do that comiple one file using gcc "file-name" -o "name-of-the-executable.out" 
+
+after which run the executables from diffrent terminals 

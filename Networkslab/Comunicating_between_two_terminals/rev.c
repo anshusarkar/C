@@ -17,7 +17,7 @@ int qid,len;
 qid=msgget((key_t)25,IPC_CREAT|0666);
 if(qid<0)
 {
-perror("msgget failed");
+perror("msg get failed");
 exit(1);
 }
 if (msgrcv(qid,&recv,100,1,0)==-1)
@@ -25,14 +25,14 @@ if (msgrcv(qid,&recv,100,1,0)==-1)
 perror("messnd failed");
 exit(1);
 }
-printf("msg from tty1 is : %s\n",recv.mtext);
-printf("\n Enter message for TTY-1::");
+printf("message from TTY-1 is : %s\n",recv.mtext);
+printf("\n Enter message for TTY-1:: "); // TTY stands for terminal
 scanf("%[^\n]s",send.mtext);
 send.mtype=2;
 len=strlen(send.mtext);
 if(msgsnd(qid,&send,len,0)==-1)
 {
-perror("message failed");
+perror("message failed !");
 exit(0);
 }
 }

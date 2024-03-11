@@ -16,10 +16,10 @@ int main()
     qid = msgget((key_t)25, IPC_CREAT | 0666);
     if (qid < 0)
     {
-        perror("msgget failed");
+        perror("msg get failed");
         exit(1);
     }
-    printf("\n Enter message for TT-2::");
+    printf("\n Enter message for TT-2:: "); //TTY stands for Termianl 
     scanf("%[^\n]s", send.mtext);
     send.mtype = 1;
     len = strlen(send.mtext);
@@ -33,5 +33,5 @@ int main()
         perror("message failed");
         exit(0);
     }
-    printf("\n Message from TTY-2 is: %s\n", recv.mtext);
+    printf("\n Message from TTY-2 is : %s\n", recv.mtext);
 }
