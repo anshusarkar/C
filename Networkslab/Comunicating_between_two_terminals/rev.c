@@ -7,7 +7,7 @@
 #include<string.h>
 int main()
 {
-struct msgbuf
+struct msgbuf       // Possibly long data type gets used for both float and integers with high numberss of digits
 {
 long mtype;
 char mtext[100];

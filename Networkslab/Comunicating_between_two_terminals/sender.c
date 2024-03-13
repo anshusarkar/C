@@ -19,7 +19,7 @@ int main()
         perror("msg get failed");
         exit(1);
     }
-    printf("\n Enter message for TT-2:: "); //TTY stands for Termianl 
+    printf("\n Enter message for TTY-2:: "); //TTY stands for Termianl 
     scanf("%[^\n]s", send.mtext);
     send.mtype = 1;
     len = strlen(send.mtext);
