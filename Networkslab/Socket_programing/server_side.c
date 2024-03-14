@@ -23,7 +23,7 @@ printf("Server waiting\n");
 client_len=sizeof(client_address);
 client_sockfd=accept(server_sockfd,(struct sockaddr *) &client_address,&client_len);
 read(client_sockfd,&ch,1);
-printf("Character from client=%c\n",ch);
+printf("Character from client is : %c\n",ch);
 ch++;
 write(client_sockfd,&ch,1);
 }

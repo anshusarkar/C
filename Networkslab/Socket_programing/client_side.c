@@ -15,7 +15,7 @@ address.sin_port=6666;
 address.sin_addr.s_addr=inet_addr("127.0.0.1");
 len=sizeof(address);
 result=connect(sockfd,(struct sockaddr *)&address,len);
-printf("\n Char sent to the server=%c\n",ch);
+printf("\n Char sent to the server is : %c\n",ch);
 write(sockfd,&ch,1);
 read(sockfd,&ch,1);
 printf("\n Char from server is : %c\n",ch);
