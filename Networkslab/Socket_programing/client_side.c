@@ -11,7 +11,7 @@ struct sockaddr_in address;
 char ch='c';
 sockfd=socket(AF_INET,SOCK_STREAM,0);
 address.sin_family=AF_INET;
-address.sin_port=6666; // The program dosen't checks if the port is empty or not ... which won't let the program to allocate the port
+address.sin_port=6666;
 address.sin_addr.s_addr=inet_addr("127.0.0.1");
 len=sizeof(address);
 result=connect(sockfd,(struct sockaddr *)&address,len);
