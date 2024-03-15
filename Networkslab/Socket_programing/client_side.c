@@ -4,6 +4,19 @@
 #include<stdio.h>
 #include<arpa/inet.h>
 #include<unistd.h>
+
+// After One time execution of this program the executables genetrated by this program might not work again as 
+
+// the program dosen't stop the program after the execution, to solve this use this command in linux
+
+// ps | grep "s.out" 
+
+// kill "port id"
+
+// Nah forget about it still only work one time at a system // some how runs every time in programizes website 
+
+// Run the server side program at first then in a seperate window run the client_side ....... they would work some how ¯\_(ツ)_/`
+
 int main()
 {
 int sockfd,len,result;
