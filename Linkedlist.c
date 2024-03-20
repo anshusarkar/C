@@ -5,7 +5,7 @@
 struct node
 {
     int data;
-    struct node *next;
+    struct node *next; // self referance of node that will link every instances node together you know would link them ...
 };
 
 void display(struct node *ptr)
