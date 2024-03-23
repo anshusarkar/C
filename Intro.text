@@ -24,4 +24,12 @@ Terms and their meanings used :
                    In C , C++ and C# every Memory can be allocated and reallocated though C# has garbage collection like java.
                    (Maybe C # has all featurs of C family in one lang  ?)
 
-                   
+Note : - Accroding to some people C and C++ is a lower level programming language because it has manual memory management and other 
+
+lang's that has interpreter support like Java, Pytthon, JS, kitlin and all are higher level programming languages cause they have garbage 
+
+collection that does the job of memory management ..... Though I never really hated manual memory management but it might just become adsoulte 
+
+-\(-_-)/- Though C++ is mostly used in the devlopment in game engines .... C is mostly usde in kernel builds .... rhough I would say ...
+
+both has alternatives like C# and java for game engines, and rust is for kernal compilations... 
