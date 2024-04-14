@@ -1,0 +1,27 @@
+1) ipconfig (Windows only ) [Fact :- in wsl both windows and linux commands works in linux and Windows terminal but for Windows only commands
+                                            add .exe at the end example :- systeminfo.exe or ping.exe google.com]
+   ipconfig /all [Space is mandatory]
+   ipconfig /renew
+   ipconfig /release
+
+2) nslookup (Works on both Windows and linux) 
+   after using the command a promt would apper 
+   past 'google.com' there or use nslookup google.com directly as a command
+
+3) ping google.com (Works on both Windows and linux) 
+   ping 127.0.0.1 (Works on both Windows and linux)
+
+4) tracert google.com (Windows only)
+
+5) netstat (Windows only)
+
+6) arp (Windows only)
+
+7) systeminfo (Windows only)
+ 
+8) tasklist (Windows only)
+
+9) getmac (Windows only)
+
+
+
