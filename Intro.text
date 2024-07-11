@@ -10,23 +10,23 @@ Terms and their meanings used :
                    is "Interpreted" like C,C++,go and rust"
 
                 2) Statically typed : A prog lang is "Statically typed" when the language 
-                   is needed to be made aware with data types the language is get's called
+                   is needed to be made aware with data types the language get's called
                    a Statically typed language.
 
-                3) Procedural : A prog lang is "Procedural" when the lang supports it's paradigm 
+                3) Procedural : A prog lang is "Procedural" when the lang supports a paradigm 
                    which is based on the concept of procedures or routines, which are sets of 
                    instructions that tell a computer what to do step by step i.e. Functions .
                    In procedural programming procedures are UDF (User defined functions)
                 
                 4) Pointers and Memory Management : In c and C++ their is a concept of pointers
-                   which is a varriable that stores the memory address of other varriables
+                   that is a varriable that stores the memory address of other varriables
 
                    In C , C++ and C# every Memory can be allocated and reallocated though C# has garbage collection like java.
                    (Maybe C # has all featurs of C family in one lang  ?)
 
 Note : - Accroding to some people C and C++ is a lower level programming language because it has manual memory management and other 
 
-lang's that has interpreter support like Java, Pytthon, JS, kitlin and all are higher level programming languages cause they have garbage 
+lang's that has interpreter support like Java, Pytthon, JS, kotlin and all are higher level programming languages cause they have garbage 
 
 collection that does the job of memory management ..... Though I never really hated manual memory management but it might just become adsoulte 
 
@@ -36,4 +36,8 @@ both has alternatives like C# and java for game engines, and rust is for kernal 
 
 some programing languages such as Ada, Modula-3, and C++/CLI support both manual memory management and garbage collection
 
-FYI : Modula-3 is the language from which the insperation of for the Pytthon was takken ....
+FYI : Modula-3 is the language from which the insperation of for the Pytthon was takken .... and FYI Ada is the language that was 
+
+made by "Ada lovelace" who invented her own programing language and is considered to be the world's first programer who worked with "Charles Babbage" of
+
+in the "Analytical engine" also Nvidia's 40 serires's architecture name is "Ada love lace" . 
