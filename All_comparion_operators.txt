@@ -1,0 +1,10 @@
+Operator	Description	                Example	            Result
+==	        Equal to	                if (a == b)	        true if a equals b
+!=	        Not equal to	            if (a != b)	        true if a does not equal b
+>	        Greater than	            if (a > b)	        true if a is greater than b
+<	        Less than	                if (a < b)	        true if a is less than b
+>=	        Greater than or equal to	if (a >= b)	        true if a is greater than or equal to b
+<=	        Less than or equal to	    if (a <= b)	        true if a is less than or equal to b
+
+
+C does not support direct comparison of strings using operators like == or !=. Instead, you need to use the strcmp function from the <string.h> library:
